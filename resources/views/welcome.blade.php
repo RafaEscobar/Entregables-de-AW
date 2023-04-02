@@ -89,7 +89,7 @@
                     <img src="/imgs/crud.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">CRUD en JavaScript</h5>
-                      <p class="card-text">Este programa muestra el funcionamiento de un CRUD pero basado en JavaScript, con las funciones habituales, ver, editar y eliminar. Asi mismo se enlistan los registros generados debajo en forma de tabla.</p>
+                      <p class="card-text">Este código muestra el funcionamiento de un CRUD pero basado en JavaScript, con las funciones habituales, ver, editar y eliminar. Asi mismo se enlistan los registros generados debajo en forma de tabla.</p>
                     </div>
                     <a href="{{route('crud')}}" class="btn btn-primary">Ver</a>
                     <div class="d-flex justify-content-center">
@@ -97,6 +97,20 @@
                     </div>
                 </div>
             </div>
+            <div class="col">
+                <div class="card">
+                    <img src="/imgs/combo.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Combo dinamico</h5>
+                      <p class="card-text">Este código nos permite generar un combo dinamico de estados. Esto consiste en un input select sobre estados, una vez seleccionado el estado en un segundo input select se nos desplegaran los municipios asociados.</p>
+                    </div>
+                    <a href="{{route('registro')}}" class="btn btn-primary">Ver</a>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class=" my-2"><img src="https://cdn-icons-png.flaticon.com/512/270/270798.png" class="" alt="..." width="35" height="35"></a>
+                    </div>
+                </div>
+            </div>
+ 
         </div>
     </div>
 @endsection

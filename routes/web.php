@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\SuperController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,3 +27,6 @@ Route::get('/arreglos', [SuperController::class, 'arreglos'])->name('arreglos');
 Route::get('/array-while', [SuperController::class, 'awhile'])->name('awhile');
 Route::get('/patterns', [SuperController::class, 'pat'])->name('pat');
 Route::get('/crud', [SuperController::class, 'crud'])->name('crud');
+
+Route::get('/registros', [UserController::class, 'registro'])->name('registro');
+Route::get('/ver_municipios', [UserController::class, 'ver_municipios'])->name('ver_municipios');

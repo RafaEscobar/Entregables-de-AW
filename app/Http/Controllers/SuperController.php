@@ -27,5 +27,8 @@ class SuperController extends Controller
     public function crud(){
         return view('crud');
     }
+    public function combo(){
+        return view('datos.registro');
+    }
 
 }

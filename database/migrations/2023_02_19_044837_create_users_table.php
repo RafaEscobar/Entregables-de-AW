@@ -16,15 +16,15 @@ class CreateUsersTable extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->engine='InnoDB';
             $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->bigInteger('municipios_id')->unsigned();
-            $table->rememberToken();
+            $table->string('name')->nullable();
+            $table->string('app')->nullable();
+            $table->integer('matricula')->nullable();
+            $table->string('gen')->nullable();
+            $table->string('direccion')->nullable();
+            $table->bigInteger('municipio_id')->unsigned();
             $table->timestamps();
 
-            $table->foreign('municipios_id')->references('id')->on('municipios')->onDelete('cascade');
+            $table->foreign('municipio_id')->references('id')->on('municipios')->onDelete('cascade');
         });
     }
 

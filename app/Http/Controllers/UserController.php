@@ -13,7 +13,7 @@ class UserController extends Controller
         return view("datos/registro")->with(['estados' => $estados]);
     }
 
-    public function ver_municipios(Request $request){
+    public function ver_municipios(Request $request){ 
         $estados_id = $request->get('estados_id');
         // dump($request);
         $municipios = Municipio::where('estados_id', $estados_id)->get();

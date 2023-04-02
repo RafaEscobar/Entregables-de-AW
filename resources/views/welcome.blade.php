@@ -98,19 +98,44 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card">
-                    <img src="/imgs/combo.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Combo dinamico</h5>
-                      <p class="card-text">Este código nos permite generar un combo dinamico de estados. Esto consiste en un input select sobre estados, una vez seleccionado el estado en un segundo input select se nos desplegaran los municipios asociados.</p>
-                    </div>
-                    <a href="{{route('registro')}}" class="btn btn-primary">Ver</a>
-                    <div class="d-flex justify-content-center">
-                        <a href="#" class=" my-2"><img src="https://cdn-icons-png.flaticon.com/512/270/270798.png" class="" alt="..." width="35" height="35"></a>
-                    </div>
-                </div>
-            </div>
- 
+              <div class="card">
+                  <img src="/imgs/combo.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Combo dinamico</h5>
+                    <p class="card-text">Este código nos permite generar un combo dinamico de estados. Esto consiste en un input select sobre estados, una vez seleccionado el estado en un segundo input select se nos desplegaran los municipios asociados.</p>
+                  </div>
+                  <a href="{{route('registro')}}" class="btn btn-primary">Ver</a>
+                  <div class="d-flex justify-content-center">
+                      <a href="#" class=" my-2"><img src="https://cdn-icons-png.flaticon.com/512/270/270798.png" class="" alt="..." width="35" height="35"></a>
+                  </div>
+              </div>
+            </div> 
+            <div class="col">
+              <div class="card">
+                  <img src="/imgs/buscar.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Crud con busqueda</h5>
+                    <p class="card-text">Este código muestra un CRUD con una barra de busqueda con la cual es posible buscar de forma especifica un registro en base al nombre.</p>
+                  </div>
+                  <a href="{{route('buscar')}}" class="btn btn-primary">Ver</a>
+                  <div class="d-flex justify-content-center">
+                      <a href="#" class=" my-2"><img src="https://cdn-icons-png.flaticon.com/512/270/270798.png" class="" alt="..." width="35" height="35"></a>
+                  </div>
+              </div>
+            </div> 
+            <div class="col">
+              <div class="card">
+                  <img src="/imgs/regis.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Registro con tablas dinamicas</h5>
+                    <p class="card-text">Este código permite crear un registro de usuario y generar su respectivo enlace a una tabla de estudios o labores.</p>
+                  </div>
+                  <a href="{{route('user.create')}}" class="btn btn-primary">Ver</a>
+                  <div class="d-flex justify-content-center">
+                      <a href="#" class=" my-2"><img src="https://cdn-icons-png.flaticon.com/512/270/270798.png" class="" alt="..." width="35" height="35"></a>
+                  </div>
+              </div>
+            </div> 
         </div>
     </div>
 @endsection

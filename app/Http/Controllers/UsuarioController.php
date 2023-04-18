@@ -25,6 +25,7 @@ class UsuarioController extends Controller
         return view("datos/ver")->with(['municipios' => $municipios]);
     }
 
+    //********************************************************************************* */
     public function ver_usuarios(Request $request){
         $coincidencia = $request->get('mensaje');
 
@@ -36,11 +37,14 @@ class UsuarioController extends Controller
             return view('datos/sin_valores');
         }
     }
+    //********************************************************************************* */
+    //********************************************************************************* */
     public function ver_nuevo(){
         $registros = User::all();
         return view('datos/ver_nuevo')->with(['registros' => $registros]);
         
     }
+    //********************************************************************************* */
 
     public function store(Request $request){
         $casillas = $request->all();
@@ -84,7 +88,6 @@ class UsuarioController extends Controller
 
     public function buscar(){
         $registros = User::all();
-        // dump($registros);
 
         return view('datos.buscar', compact('registros'));
     }

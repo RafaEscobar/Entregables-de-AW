@@ -27,17 +27,16 @@
                 </tr>
               </thead>
               <tbody id="loadsite">
-                
-          @foreach ($registros as $item)                   
-          @if (isset($item['name']))
-                   <tr>
-                   <td>{{$item->name}}</td>
-                  <td>{{$item->matricula}}</td>
-                  <td>{{$item->gen}}</td>
-                  <td>{{$item->municipio->nombre}}</td>
-              </tr>
-          @endif
-          @endforeach
+                @foreach ($registros as $item)                   
+                @if (isset($item['name']))
+                  <tr>
+                    <td>{{$item->name}}</td>
+                    <td>{{$item->matricula}}</td>
+                    <td>{{$item->gen}}</td>
+                    <td>{{$item->municipio->nombre}}</td>
+                  </tr>
+                @endif
+                @endforeach
               </tbody>
           </table>
       </div>
@@ -46,15 +45,13 @@
         $(document).ready(function(){
             $('#ingreso').on('keyup', function(){
                 let mensaje = document.getElementById("ingreso").value;
-                // alert(mensaje.length);
-                // console.log(mensaje.length);
                 if(mensaje.length>=3){
                   $('#loadsite').load('ver_usuarios?mensaje=' + mensaje);
                 }
             });
             const input = document.getElementById('ingreso');
             input.addEventListener('input', () => {
-              if (input.value.trim().length === 0) {
+              if (input.value.trim().length === 0 || input.value.trim().length === 1 || input.value.trim().length === 2) {
                 console.log('El input está vacío');
                 $('#loadsite').load('ver_nuevo');
               }

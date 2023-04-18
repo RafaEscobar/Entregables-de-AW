@@ -37,7 +37,10 @@ Route::get('/ver_municipios', [UserController::class, 'ver_municipios'])->name('
 ////? Diferente controlador
 Route::get('/user', [UsuarioController::class, 'create'])->name('user.create');
 Route::post('/user/store', [UsuarioController::class, 'store'])->name('user.store');
-Route::get('/ver_usuarios', [UsuarioController::class, 'ver_usuarios'])->name('ver_usuarios');
-Route::get('/ver_nuevo', [UsuarioController::class, 'ver_nuevo'])->name('ver_nuevo');
 Route::get('/sin_valores', [UsuarioController::class, 'sin_valores'])->name('sin_valores');
 Route::get('/buscar', [UsuarioController::class, 'buscar'])->name('buscar');
+
+
+//?????????????????????????????????????????????????????????????????????????????????????????
+Route::get('/ver_usuarios', [UsuarioController::class, 'ver_usuarios'])->name('ver_usuarios');
+Route::get('/ver_nuevo', [UsuarioController::class, 'ver_nuevo'])->name('ver_nuevo');
